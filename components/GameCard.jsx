@@ -28,7 +28,7 @@ export function AnimatedGameCard({ game, index }) {
         Animated.timing(opacity, {
             toValue: 1,
             duration: 500,
-            delay: index * 500,
+            delay: index * 250,
             useNativeDriver: true
         }).start()
     }, [index, opacity])
