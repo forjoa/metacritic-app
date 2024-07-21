@@ -9,7 +9,10 @@ import {
 
 export function GameCard({ game }) {
     return (
-        <View key={game.slug} style={styles.card}>
+        <View 
+            key={game.slug} 
+            className='bg-gray-500/10 p-4 rounded-xl gap-4 mb-10'
+        >
             <Image
                 source={{ uri: game.image }}
                 style={styles.image}
